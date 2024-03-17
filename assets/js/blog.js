@@ -8,10 +8,18 @@ $(document).ready(function() {
     const $postElement = $(`<div>`).addClass(`blog-post`);
     const $titleElement = $(`<h2>`).text(blogPost.title);
     const $contentElement = $(`<p>`).text(blogPost.content);
+    const $usernameElement =$(`<p>`).text("Posted by " + blogPost.username);
 
-    $postElement.append($titleElement, $contentElement);
+    $postElement.append($titleElement, $contentElement, $usernameElement);
 
     $blogPostContainer.append($postElement);
+
+    //styling
+
+    $postElement.css({
+        "border": "3px solid black",
+        "margin-bottom": "20px"
+    });
 
     });
 });
