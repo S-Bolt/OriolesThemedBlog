@@ -9,27 +9,26 @@
     <title>Document</title>
 </head>
 <body>  <!--Nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light"><!--Changed to xxl to make toggle icon stay at largest width.-->
         <div class="container-fluid">
-            
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon">nav</span>
-                </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Back</a>
-                             </li> 
-                        </ul>
-                    </div>
-                    
+            <a class="navbar-brand" href="#">My First Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-       
-        
     </nav>
 <!--blog entries-->
-<div class="container">
+<div class="container border border-dark ">
     <!-- Container for blog post data -->
     <div id="blogContainer">
         <!-- Blog post items will be dynamically inserted here -->
@@ -41,4 +40,5 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<footer class="text-center"> <a href="https://github.com/S-Bolt?tab=repositories">Github</a></footer>
 </html>
