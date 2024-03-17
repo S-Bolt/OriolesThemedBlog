@@ -17,8 +17,7 @@ $(document).ready(function(){
         console.log(`title:` , title);
         console.log(`content:` , content);
         //works
-       
-       
+    
         //turning data into object
         const blogPost = {
             username: username,
@@ -27,7 +26,7 @@ $(document).ready(function(){
         };
         console.log(blogPost);//works
 
-        let currentPost = JSON.parse(localStorage.getItem(`blogPosts`));
+        let currentPost = JSON.parse(localStorage.getItem(`blogKey`));
 
         // Ensure currentPosts is an array- wihout this line it returns null
             if (!Array.isArray(currentPost)) {
@@ -36,10 +35,12 @@ $(document).ready(function(){
             //
 
         currentPost.push(blogPost);
-        localStorage.setItem(`blogPosts`, JSON.stringify(currentPost));
+        localStorage.setItem(`blogKey`, JSON.stringify(currentPost));
 
         //clear form after submission
         $(`#blogForm`)[0].reset(); 
+
+        window.location.href = `blogindex.html`;//sends user to second page.
 
 
     });
