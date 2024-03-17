@@ -3,12 +3,12 @@ $(document).ready(function() {
     const blogPosts = JSON.parse(localStorage.getItem(`blogKey`));//BlogKey is local key
     const $blogPostContainer = $(`#blogContainer`);//div id
 
-    blogPosts.reverse();//fixed issue where most recent was appending to the bottom. Now most recent goes to top.
+    blogPosts.reverse();//fixed issue where most recent blog was appending to the bottom. Now most recent goes to top.
 
     $.each(blogPosts, function(index, blogPost){
 
     const $postElement = $(`<div>`).addClass(`blog-post`);
-    const $titleElement = $(`<h2>`).text(blogPost.title);
+    const $titleElement = $(`<h2>`).text(blogPost.title).addClass(`underline`);
     const $contentElement = $(`<p>`).text(blogPost.content);
     const $usernameElement =$(`<p>`).text("Posted by " + blogPost.username);
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     $blogPostContainer.append($postElement);
 
-    //styling, not sure if this is appropriate to have in my JS, but wanted to experiment.
+    //styling, not sure if this is appropriate to have in my JS, but wanted to experiment. Could had added classes to CSS style it.
 
     $postElement.css({
         "border": "3px solid black",
@@ -31,6 +31,7 @@ $(document).ready(function() {
 
     $contentElement.css({
         "margin-left": "1.5rem",
+        "font-weight": "bold"
 
     });
 

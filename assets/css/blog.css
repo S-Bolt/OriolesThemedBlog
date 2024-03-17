@@ -1,3 +1,8 @@
 .navbar {
     flex-wrap: nowrap !important;
 }
+/*adds the underline underneath the title element*/
+.underline {
+    border-bottom: solid black 1px;
+    margin-right: 1rem;
+}
