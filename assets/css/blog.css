@@ -1,8 +1,28 @@
 .navbar {
     flex-wrap: nowrap !important;
 }
-/*adds the underline underneath the title element*/
-.underline {
+
+.blog-post {
+    border: 3px solid black;
+    margin-bottom: 1rem;
+}
+
+.title {
     border-bottom: solid black 1px;
     margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 18px;
+}
+
+.content {
+    margin-left: 1.5rem;
+    font-weight: bold;
+
+}
+
+.username {
+    margin-left: 1rem;
+    font-size: 14px;
+    margin-bottom: 0;
+
 }
