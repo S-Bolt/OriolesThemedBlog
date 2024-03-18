@@ -1,7 +1,9 @@
-.navbar {
-    flex-wrap: nowrap !important;
-}
 
+.navbar-nav .btn,
+.navbar-toggler {
+    display: inline-block!important; 
+    /*at xxl displays I had to stle using inline and !important to keep the toggle icon from being left off the page*/
+}
 .blog-post {
     border: 3px solid black;
     margin-bottom: 1rem;
