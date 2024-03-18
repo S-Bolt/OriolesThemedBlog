@@ -15,7 +15,7 @@
 
 ## Usage
 
- Come view and participate in the blog here:  https://s-bolt.github.io/SamBlogSpace/
+ Come view and participate in the blog here: https://s-bolt.github.io/OriolesThemedBlog/
 
 ## Screenshots
  
@@ -25,4 +25,4 @@
 
  ## License
 
- This project is licensed under the MIT License - see the LICENSE file for details.
+ This project is licensed under the MIT License. Feel free to use, modify, and distribute the code for personal or commercial projects.
