@@ -11,7 +11,7 @@ body {
 }
  /*background that is toggled to*/
 body.dark-mode {
-    background-color:gray;
+    background-color:#FC4C02;
     color: white;
 }
 
