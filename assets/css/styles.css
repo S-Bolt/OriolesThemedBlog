@@ -1,3 +1,14 @@
-.navbar {
-    flex-wrap: nowrap !important;
+/*same issue as blogindex.html...this lets the toggle icon display on xxl displays.*/
+.navbar-toggler {
+    display: inline-block!important; 
+}
+/*default background*/
+body {
+    background-color: white;
+    color: black;
+}
+ /*background that is toggled to*/
+body.dark-mode {
+    background-color:gray;
+    color: white;
 }

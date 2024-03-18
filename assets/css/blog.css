@@ -4,6 +4,17 @@
     display: inline-block!important; 
     /*at xxl displays I had to stle using inline and !important to keep the toggle icon from being left off the page*/
 }
+/*default background*/
+body {
+    background-color: white;
+    color: black;
+}
+ /*background that is toggled to*/
+body.dark-mode {
+    background-color:gray;
+    color: white;
+}
+
 .blog-post {
     border: 3px solid black;
     margin-bottom: 1rem;

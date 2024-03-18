@@ -41,8 +41,11 @@ $(document).ready(function(){
         $(`#blogForm`)[0].reset(); 
 
         window.location.href = `blogindex.html`;//sends user to second page.
-
-
+                
+    });
+    //toggle  
+    $(`.navbar-toggler`).click(function() {
+        $(`body`).toggleClass(`dark-mode`);
     });
 });
 

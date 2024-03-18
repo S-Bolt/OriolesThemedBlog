@@ -3,6 +3,7 @@ $(document).ready(function() {
     const blogPosts = JSON.parse(localStorage.getItem(`blogKey`));//BlogKey is local key
     const $blogPostContainer = $(`#blogContainer`);//div id
 
+   
     blogPosts.reverse();//fixed issue where most recent blog was appending to the bottom. Now most recent goes to top.
 
     $.each(blogPosts, function(index, blogPost){
@@ -15,6 +16,11 @@ $(document).ready(function() {
     $postElement.append($titleElement, $contentElement, $usernameElement);
 
     $blogPostContainer.append($postElement);
+    });
 
+    //event listener to toggle background
+    
+    $(`.navbar-toggler`).click(function() {
+        $(`body`).toggleClass(`dark-mode`);
     });
 });
