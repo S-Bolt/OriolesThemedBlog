@@ -4,14 +4,11 @@
 }
 /*default background*/
 body {
-    background-color: white;
-    color: black;
-}
- /*background that is toggled to*/
-body.dark-mode {
     background-color:#FC4C02;
     color: white;
 }
-.btn {
-    !important;
+ /*background that is toggled to*/
+body.dark-mode {
+    background-color:black;
+    color: #FC4C02;
 }

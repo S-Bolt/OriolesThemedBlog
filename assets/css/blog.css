@@ -6,13 +6,14 @@
 }
 /*default background*/
 body {
-    background-color: white;
-    color: black;
-}
- /*background that is toggled to*/
-body.dark-mode {
     background-color:#FC4C02;
     color: white;
+}
+ /*background that is toggled to*/
+
+body.dark-mode {
+    background-color:black;
+    color: #FC4C02;
 }
 
 .blog-post {
@@ -26,7 +27,14 @@ body.dark-mode {
     margin-left: 1rem;
     font-size: 18px;
 }
-
+/*Needed to add dark mode to make othe elments visible*/
+.dark-mode .blog-post {
+    border-color: white;
+}
+.dark-mode .title {
+    border-color: white;
+    
+}
 .content {
     margin-left: 1.5rem;
     font-weight: bold;
